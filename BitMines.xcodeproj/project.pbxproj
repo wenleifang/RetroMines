@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71B238C91E34681B007FC8F6 /* BitMinesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B238C81E34681B007FC8F6 /* BitMinesViewControllerTests.swift */; };
+		71C0DE281E345484004647B4 /* MineSpaceSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0DE271E345484004647B4 /* MineSpaceSelectable.swift */; };
+		71C0DE2A1E3456F1004647B4 /* BitMinesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C0DE291E3456F1004647B4 /* BitMinesDataSourceTests.swift */; };
+		71E765691E31244200C963B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765681E31244200C963B7 /* AppDelegate.swift */; };
+		71E7656B1E31244200C963B7 /* BitMinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7656A1E31244200C963B7 /* BitMinesViewController.swift */; };
+		71E7656E1E31244200C963B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E7656C1E31244200C963B7 /* Main.storyboard */; };
+		71E765701E31244200C963B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E7656F1E31244200C963B7 /* Assets.xcassets */; };
+		71E765731E31244200C963B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E765711E31244200C963B7 /* LaunchScreen.storyboard */; };
+		71E7657E1E31244200C963B7 /* BitMinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7657D1E31244200C963B7 /* BitMinesTests.swift */; };
+		71E765891E312A6F00C963B7 /* BitMinesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765881E312A6F00C963B7 /* BitMinesDataSource.swift */; };
+		71E7658B1E312E3D00C963B7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7658A1E312E3D00C963B7 /* GameModel.swift */; };
+		71E7658D1E313A9800C963B7 /* GameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7658C1E313A9800C963B7 /* GameModelTests.swift */; };
+		71E7658F1E3152F400C963B7 /* BitMinesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7658E1E3152F400C963B7 /* BitMinesDelegate.swift */; };
+		71E765911E31555B00C963B7 /* BitMinesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765901E31555B00C963B7 /* BitMinesCell.swift */; };
+		71E765931E3184A700C963B7 /* GameSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765921E3184A700C963B7 /* GameSizeTests.swift */; };
+		71E765951E31857B00C963B7 /* GameCoordinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765941E31857B00C963B7 /* GameCoordinateTests.swift */; };
+		71E765971E3186C300C963B7 /* GameModelSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765961E3186C300C963B7 /* GameModelSpaceTests.swift */; };
+		71E765991E3187DF00C963B7 /* GameModelExplorationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E765981E3187DF00C963B7 /* GameModelExplorationTests.swift */; };
+		71E7659B1E31898A00C963B7 /* GameModelSpaceAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E7659A1E31898A00C963B7 /* GameModelSpaceAppearanceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71E7657A1E31244200C963B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71E7655D1E31244100C963B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71E765641E31244200C963B7;
+			remoteInfo = BitMines;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71B238C81E34681B007FC8F6 /* BitMinesViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BitMinesViewControllerTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		71C0DE271E345484004647B4 /* MineSpaceSelectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineSpaceSelectable.swift; sourceTree = "<group>"; };
+		71C0DE291E3456F1004647B4 /* BitMinesDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitMinesDataSourceTests.swift; sourceTree = "<group>"; };
+		71E765651E31244200C963B7 /* BitMines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitMines.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E765681E31244200C963B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71E7656A1E31244200C963B7 /* BitMinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BitMinesViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		71E7656D1E31244200C963B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71E7656F1E31244200C963B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71E765721E31244200C963B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71E765741E31244200C963B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E765791E31244200C963B7 /* BitMinesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitMinesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E7657D1E31244200C963B7 /* BitMinesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMinesTests.swift; sourceTree = "<group>"; };
+		71E7657F1E31244200C963B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E765881E312A6F00C963B7 /* BitMinesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BitMinesDataSource.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		71E7658A1E312E3D00C963B7 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		71E7658C1E313A9800C963B7 /* GameModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModelTests.swift; sourceTree = "<group>"; };
+		71E7658E1E3152F400C963B7 /* BitMinesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BitMinesDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		71E765901E31555B00C963B7 /* BitMinesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BitMinesCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		71E765921E3184A700C963B7 /* GameSizeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSizeTests.swift; sourceTree = "<group>"; };
+		71E765941E31857B00C963B7 /* GameCoordinateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCoordinateTests.swift; sourceTree = "<group>"; };
+		71E765961E3186C300C963B7 /* GameModelSpaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModelSpaceTests.swift; sourceTree = "<group>"; };
+		71E765981E3187DF00C963B7 /* GameModelExplorationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModelExplorationTests.swift; sourceTree = "<group>"; };
+		71E7659A1E31898A00C963B7 /* GameModelSpaceAppearanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModelSpaceAppearanceTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71E765621E31244200C963B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E765761E31244200C963B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71E7655C1E31244100C963B7 = {
+			isa = PBXGroup;
+			children = (
+				71E765671E31244200C963B7 /* BitMines */,
+				71E7657C1E31244200C963B7 /* BitMinesTests */,
+				71E765661E31244200C963B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71E765661E31244200C963B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71E765651E31244200C963B7 /* BitMines.app */,
+				71E765791E31244200C963B7 /* BitMinesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71E765671E31244200C963B7 /* BitMines */ = {
+			isa = PBXGroup;
+			children = (
+				71E765681E31244200C963B7 /* AppDelegate.swift */,
+				71E7656F1E31244200C963B7 /* Assets.xcassets */,
+				71E765901E31555B00C963B7 /* BitMinesCell.swift */,
+				71E7658A1E312E3D00C963B7 /* GameModel.swift */,
+				71E765741E31244200C963B7 /* Info.plist */,
+				71E765711E31244200C963B7 /* LaunchScreen.storyboard */,
+				71E7656C1E31244200C963B7 /* Main.storyboard */,
+				71C0DE271E345484004647B4 /* MineSpaceSelectable.swift */,
+				71E765881E312A6F00C963B7 /* BitMinesDataSource.swift */,
+				71E7658E1E3152F400C963B7 /* BitMinesDelegate.swift */,
+				71E7656A1E31244200C963B7 /* BitMinesViewController.swift */,
+			);
+			path = BitMines;
+			sourceTree = "<group>";
+		};
+		71E7657C1E31244200C963B7 /* BitMinesTests */ = {
+			isa = PBXGroup;
+			children = (
+				71E7657D1E31244200C963B7 /* BitMinesTests.swift */,
+				71E7657F1E31244200C963B7 /* Info.plist */,
+				71E7658C1E313A9800C963B7 /* GameModelTests.swift */,
+				71E765921E3184A700C963B7 /* GameSizeTests.swift */,
+				71E765941E31857B00C963B7 /* GameCoordinateTests.swift */,
+				71E765961E3186C300C963B7 /* GameModelSpaceTests.swift */,
+				71E765981E3187DF00C963B7 /* GameModelExplorationTests.swift */,
+				71E7659A1E31898A00C963B7 /* GameModelSpaceAppearanceTests.swift */,
+				71C0DE291E3456F1004647B4 /* BitMinesDataSourceTests.swift */,
+				71B238C81E34681B007FC8F6 /* BitMinesViewControllerTests.swift */,
+			);
+			path = BitMinesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71E765641E31244200C963B7 /* BitMines */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E765821E31244200C963B7 /* Build configuration list for PBXNativeTarget "BitMines" */;
+			buildPhases = (
+				71E765611E31244200C963B7 /* Sources */,
+				71E765621E31244200C963B7 /* Frameworks */,
+				71E765631E31244200C963B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitMines;
+			productName = BitMines;
+			productReference = 71E765651E31244200C963B7 /* BitMines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71E765781E31244200C963B7 /* BitMinesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71E765851E31244200C963B7 /* Build configuration list for PBXNativeTarget "BitMinesTests" */;
+			buildPhases = (
+				71E765751E31244200C963B7 /* Sources */,
+				71E765761E31244200C963B7 /* Frameworks */,
+				71E765771E31244200C963B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E7657B1E31244200C963B7 /* PBXTargetDependency */,
+			);
+			name = BitMinesTests;
+			productName = BitMinesTests;
+			productReference = 71E765791E31244200C963B7 /* BitMinesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71E7655D1E31244100C963B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Andrew Rahn";
+				TargetAttributes = {
+					71E765641E31244200C963B7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F9YPCZ2479;
+						ProvisioningStyle = Automatic;
+					};
+					71E765781E31244200C963B7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F9YPCZ2479;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71E765641E31244200C963B7;
+					};
+				};
+			};
+			buildConfigurationList = 71E765601E31244100C963B7 /* Build configuration list for PBXProject "BitMines" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71E7655C1E31244100C963B7;
+			productRefGroup = 71E765661E31244200C963B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71E765641E31244200C963B7 /* BitMines */,
+				71E765781E31244200C963B7 /* BitMinesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71E765631E31244200C963B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E765731E31244200C963B7 /* LaunchScreen.storyboard in Resources */,
+				71E765701E31244200C963B7 /* Assets.xcassets in Resources */,
+				71E7656E1E31244200C963B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E765771E31244200C963B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71E765611E31244200C963B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E7656B1E31244200C963B7 /* BitMinesViewController.swift in Sources */,
+				71E765911E31555B00C963B7 /* BitMinesCell.swift in Sources */,
+				71E7658F1E3152F400C963B7 /* BitMinesDelegate.swift in Sources */,
+				71E7658B1E312E3D00C963B7 /* GameModel.swift in Sources */,
+				71C0DE281E345484004647B4 /* MineSpaceSelectable.swift in Sources */,
+				71E765691E31244200C963B7 /* AppDelegate.swift in Sources */,
+				71E765891E312A6F00C963B7 /* BitMinesDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E765751E31244200C963B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E765971E3186C300C963B7 /* GameModelSpaceTests.swift in Sources */,
+				71E765931E3184A700C963B7 /* GameSizeTests.swift in Sources */,
+				71C0DE2A1E3456F1004647B4 /* BitMinesDataSourceTests.swift in Sources */,
+				71E765951E31857B00C963B7 /* GameCoordinateTests.swift in Sources */,
+				71E7657E1E31244200C963B7 /* BitMinesTests.swift in Sources */,
+				71E7658D1E313A9800C963B7 /* GameModelTests.swift in Sources */,
+				71E7659B1E31898A00C963B7 /* GameModelSpaceAppearanceTests.swift in Sources */,
+				71E765991E3187DF00C963B7 /* GameModelExplorationTests.swift in Sources */,
+				71B238C91E34681B007FC8F6 /* BitMinesViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71E7657B1E31244200C963B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71E765641E31244200C963B7 /* BitMines */;
+			targetProxy = 71E7657A1E31244200C963B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71E7656C1E31244200C963B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71E7656D1E31244200C963B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71E765711E31244200C963B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71E765721E31244200C963B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71E765801E31244200C963B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71E765811E31244200C963B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71E765831E31244200C963B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9YPCZ2479;
+				INFOPLIST_FILE = BitMines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.paddlefish.MineSweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		71E765841E31244200C963B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9YPCZ2479;
+				INFOPLIST_FILE = BitMines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.paddlefish.MineSweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		71E765861E31244200C963B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F9YPCZ2479;
+				INFOPLIST_FILE = BitMinesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.paddlefish.BitMinesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitMines.app/BitMines";
+			};
+			name = Debug;
+		};
+		71E765871E31244200C963B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F9YPCZ2479;
+				INFOPLIST_FILE = BitMinesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.paddlefish.BitMinesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitMines.app/BitMines";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71E765601E31244100C963B7 /* Build configuration list for PBXProject "BitMines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E765801E31244200C963B7 /* Debug */,
+				71E765811E31244200C963B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E765821E31244200C963B7 /* Build configuration list for PBXNativeTarget "BitMines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E765831E31244200C963B7 /* Debug */,
+				71E765841E31244200C963B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71E765851E31244200C963B7 /* Build configuration list for PBXNativeTarget "BitMinesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71E765861E31244200C963B7 /* Debug */,
+				71E765871E31244200C963B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71E7655D1E31244100C963B7 /* Project object */;
+}

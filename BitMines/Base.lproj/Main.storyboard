@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d3Q-Q8-ZBB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bit Mines View Controller-->
+        <scene sceneID="Frx-Ep-c7R">
+            <objects>
+                <viewController storyboardIdentifier="game_board" id="d3Q-Q8-ZBB" customClass="BitMinesViewController" customModule="BitMines" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SWs-he-Vqq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q7o-Q6-4Zk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5av-eJ-ah5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="acd-zc-M6D">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score_background" translatesAutoresizingMaskIntoConstraints="NO" id="pl6-05-Mhf">
+                                <rect key="frame" x="24" y="48" width="328" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="TTy-ua-4Hu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="score_background" translatesAutoresizingMaskIntoConstraints="NO" id="Y8a-ak-LA4" userLabel="game_area_background">
+                                <rect key="frame" x="24" y="112" width="328" height="535"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-Ei-9mw">
+                                <rect key="frame" x="28" y="116" width="320" height="527"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2TM-FT-a8p">
+                                    <size key="itemSize" width="32" height="32"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="unexplored_cell" id="xz1-Ay-Rye" userLabel="unexplored_cell" customClass="BitMinesCell" customModule="BitMines" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mine_space" translatesAutoresizingMaskIntoConstraints="NO" id="8y2-Xl-6dL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="countImageView" destination="8y2-Xl-6dL" id="mw4-Ld-wXK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="explored_cell" id="eJi-jQ-HhO" userLabel="mine_sweeper_cell" customClass="BitMinesCell" customModule="BitMines" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0_mine" translatesAutoresizingMaskIntoConstraints="NO" id="AHn-Mg-LNB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="countImageView" destination="AHn-Mg-LNB" id="TP3-G4-JEu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-TK-uK3">
+                                <rect key="frame" x="175" y="59" width="26" height="26"/>
+                                <state key="normal" image="happy_button"/>
+                                <connections>
+                                    <action selector="restartGameWithSender:" destination="d3Q-Q8-ZBB" eventType="touchUpInside" id="BlW-JF-M2D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EaF-Ei-9mw" firstAttribute="top" secondItem="Y8a-ak-LA4" secondAttribute="top" constant="4" id="61b-x8-Q96"/>
+                            <constraint firstItem="Q7o-Q6-4Zk" firstAttribute="top" secondItem="Y8a-ak-LA4" secondAttribute="bottom" constant="20" id="9fA-XP-gTh"/>
+                            <constraint firstItem="EaF-Ei-9mw" firstAttribute="bottom" secondItem="Y8a-ak-LA4" secondAttribute="bottom" constant="-4" id="AuW-2Z-icQ"/>
+                            <constraint firstItem="pl6-05-Mhf" firstAttribute="leading" secondItem="Y8a-ak-LA4" secondAttribute="leading" id="BqY-gT-U5a"/>
+                            <constraint firstItem="bVE-TK-uK3" firstAttribute="centerY" secondItem="pl6-05-Mhf" secondAttribute="centerY" id="Dqk-9w-8TO"/>
+                            <constraint firstItem="pl6-05-Mhf" firstAttribute="top" secondItem="SWs-he-Vqq" secondAttribute="bottom" constant="28" id="Ich-57-K5d"/>
+                            <constraint firstItem="EaF-Ei-9mw" firstAttribute="leading" secondItem="Y8a-ak-LA4" secondAttribute="leading" constant="4" id="JOV-hC-Y6d"/>
+                            <constraint firstItem="Y8a-ak-LA4" firstAttribute="centerX" secondItem="5av-eJ-ah5" secondAttribute="centerX" id="P1r-Jf-Bx8"/>
+                            <constraint firstItem="EaF-Ei-9mw" firstAttribute="width" secondItem="5av-eJ-ah5" secondAttribute="width" constant="-55" id="Qiw-8E-Wmq"/>
+                            <constraint firstItem="pl6-05-Mhf" firstAttribute="trailing" secondItem="Y8a-ak-LA4" secondAttribute="trailing" id="TCz-7L-7UL"/>
+                            <constraint firstItem="EaF-Ei-9mw" firstAttribute="trailing" secondItem="Y8a-ak-LA4" secondAttribute="trailing" constant="-4" id="UVJ-0I-Pd3"/>
+                            <constraint firstItem="pl6-05-Mhf" firstAttribute="bottom" secondItem="Y8a-ak-LA4" secondAttribute="top" constant="-16" id="cXv-6n-Tm8"/>
+                            <constraint firstItem="bVE-TK-uK3" firstAttribute="centerX" secondItem="pl6-05-Mhf" secondAttribute="centerX" id="dKq-5P-gCB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eE9-sd-UWJ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="EaF-Ei-9mw" id="8cR-g2-OpR"/>
+                        <outlet property="gameButton" destination="bVE-TK-uK3" id="wHo-hf-eBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Kz-cH-BmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0_mine" width="32" height="32"/>
+        <image name="background" width="132" height="122"/>
+        <image name="happy_button" width="26" height="26"/>
+        <image name="mine_space" width="7" height="7"/>
+        <image name="score_background" width="28" height="28"/>
+    </resources>
+</document>
